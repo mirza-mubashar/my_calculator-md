@@ -1,0 +1,147 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #content-div {
+        border: 1px solid #ccc;
+
+        padding: 20px;
+        width: 300px;
+        margin: 10px auto;
+        text-align: center;
+        position: relative;
+        overflow: hidden; /* Ensure the sliding effect is contained within the div */
+        border-radius: 10px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+    #history-btn{
+        padding: 5px;
+    }
+    #history-btn:hover {
+        cursor: pointer;
+    }
+    #back-btn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    #back-btn:hover {
+        cursor: pointer;
+        
+    }
+    .top-bar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 10px;
+        margin: 15px;
+        font-size: 18px;
+        /* border-bottom: 1px solid white; */
+    }
+    .show-result{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    input::placeholder{
+        color: white;
+    }
+    .top-element{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        text-align: right;
+    }
+
+
+    #history-content {
+        position: absolute;
+        top: 0;
+        left: -100%; /* Adjust to match the width of #content-div */
+        width: 100%; /* Same as #content-div width */
+        height: 100%;
+        background-color: white;
+        border-right: 1px solid #ccc;
+        text-align: left;
+        overflow-y: auto;
+        transition: left 0.5s ease;
+    }
+
+    #history-content.visible {
+        left: 0;
+    }
+
+    #back-btn {
+        display: block;
+        margin: 10px auto;
+        padding: 5px 10px;
+    }
+    #history-content{
+        background-color: black;
+        color: white;
+    }
+    .cal-element{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+    }
+    .cal-element button{
+        width: 70px;
+        padding: 15px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 18px;
+        box-shadow: 0.3px 1px 3px 0.002px #0800ff94;
+        border-radius: 20px;
+        margin: 5px;
+    }
+    .cal-element button:hover{
+        cursor: pointer;
+        background-color: wheat;
+        color: black;
+    }
+    #ac-btn, #eql-btn{
+        background-color: rgb(219, 219, 5);
+        color: black;
+    }
+
+
+    /* history card css */
+    .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 30%;
+        height: 300px;
+    }
+    
+.history-content-title{
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+    justify-content: space-between;
+}
+.history-content-title h3{
+    
+    margin-left: 20px;
+}
+.history-content-title h5{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.zani{
+    text-decoration: underline;
+    color: blue;
+}
+.zani:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with History</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body style="background-color: black; color: white;">
+    <div id="content-div">
+        <div class="container">
+            <div class="top-bar">
+                <input  class="show-result top-element " type="text" placeholder="0" disabled>
+                <div class="top-element" id="history-btn">
+                    <i class="bi bi-list"></i>
+                </div>
+            </div>
+            
+
+            <div class="cal-element">
+                <button value="M+">M+</button>
+                <button value="/">/</button>
+                <button value="%">%</button>
+                <button id="ac-btn" value="c">AC</button>
+            </div>
+            <div class="cal-element">
+                <button value="1">7</button>
+                <button value="2">8</button>
+                <button value="+">9</button>
+                <button value="=">*</button>
+            </div>
+            <div class="cal-element">
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="-">-</button>
+            </div>
+            <div class="cal-element">
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="+">+</button>
+            </div>
+            <div class="cal-element">
+                <button value="0">0</button>
+                <button value="00">00</button>
+                <button value=".">.</button>
+                <button id="eql-btn" value="=">=</button>
+            </div>
+        </div>
+
+        <div id="history-content" class="hidden">
+
+            <button id="back-btn"><i class="bi bi-x"></i></button>
+            <div class="history-content-title">
+                <h3 class="history-content-item">Calculation History</h3>
+                <h5>This web app is designed and developed by<a href="/">MD <strong>md23@what.org</strong></a> dedicated to my sweet friend (Churail sift) <div onclick="bazzAja()" class="zani">Zunaira Tabasum urf Zani </div></h5>  
+            </div>
+              
+            <!-- Calculation history will be added here -->
+
+        </div>
+    </div>
+
+    <script>
+        bazzAja = () => {
+            alert(`Bazz aja!`)
+        }
+    </script>
+</body>
+</html>
